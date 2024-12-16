@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Cars Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Vintage Cars Gallery</h1>
+            <p>Explore the classics!</p>
+        </div>
+    </header>
+
+    <section class="cars-gallery">
+        <div class="container">
+            <div class="car-card" onclick="showInfo('car1')">
+                <img src="1921_Ford_Model_T.jpg" alt="Old Car 1">
+                <h3>Ford Model T (1927)</h3>
+            </div>
+
+            <div class="car-card" onclick="showInfo('car2')">
+                <img src="629780fc73fbeb31e4099b868c2ca6331bc4dc53.webp" alt="Old Car 2">
+                <h3>Chevrolet Classic (1940)</h3>
+            </div>
+
+            <div class="car-card" onclick="showInfo('car3')">
+                <img src="c8a89f42350c47ea2e16550beea190d56a1c4a96.webp" alt="Old Car 3">
+                <h3>Buick Roadmaster (1950)</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="car-info">
+                <!-- Information will be injected by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
